@@ -27,6 +27,20 @@ public class Client {
         InputStream inFromServer = client.getInputStream();
         DataInputStream in = new DataInputStream(inFromServer);//服务器响应数据容器
         System.out.println("服务器响应： " + in.readUTF());
+
+        int length = 0;
+        long progress = 0;
+        File file = new File("test.txt");
+        FileInputStream fis = new FileInputStream(file);
+        DataOutputStream dos = new DataOutputStream(client.getOutputStream());
+        byte[] sendBytes = new byte[1024];
+        while((length = fis.read(sendBytes, 0, sendBytes.length)) != -1) {
+            dos.write(sendBytes, 0, length);
+            dos.flush();
+            progress += length;
+            System.out.print("| " + (100*progress/file.length()) + "% |");
+        }
+
         client.close();
     }
 

@@ -19,6 +19,24 @@ public class Server {
 
             DataOutputStream out = new DataOutputStream(server.getOutputStream());//发送给客户端的数据的容器
             out.writeUTF("谢谢连接我：" + server.getLocalSocketAddress() + "\nGoodbye!");
+
+
+
+
+            DataInputStream dis = new DataInputStream(server.getInputStream());
+
+            // 文件名和长度
+            File file = new File("test_rec.txt");
+            FileOutputStream fos = new FileOutputStream(file);
+            byte[] bytes = new byte[1024];
+            int length = 0;
+            while((length = dis.read(bytes, 0, bytes.length)) != -1) {
+                fos.write(bytes, 0, length);
+                fos.flush();
+            }
+
+
+
             server.close();
         }
     }
