@@ -3,6 +3,9 @@ package com.mysocket;
 import java.io.*;
 import java.net.*;
 import net.sf.json.*;
+import java.awt.*;
+import javax.swing.*;
+
 
 public class Client {
     public static void main(String argv[]) throws Exception {

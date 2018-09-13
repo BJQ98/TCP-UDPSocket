@@ -4,12 +4,14 @@ import java.io.*;
 import java.net.*;
 import net.sf.json.*;
 
+
 public class Server {
     public static void main(String argv[]) throws Exception {
         ServerSocket welcomeSocket = new ServerSocket(6799);
         while(true) {
             Socket server = welcomeSocket.accept();//准备接受客户端的数据
             System.out.println("远程主机地址：" + server.getRemoteSocketAddress());
+            System.out.println("当前所处的服务器地址为" + server.getLocalSocketAddress());
             DataInputStream in = new DataInputStream(server.getInputStream());//获取输入数据的容器
 
             String info_str = in.readUTF();
@@ -34,9 +36,6 @@ public class Server {
                 fos.write(bytes, 0, length);
                 fos.flush();
             }
-
-
-
             server.close();
         }
     }
