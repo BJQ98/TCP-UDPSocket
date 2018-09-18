@@ -7,8 +7,9 @@ import net.sf.json.*;
 
 public class Server {
     public static void main(String argv[]) throws Exception {
-        ServerSocket welcomeSocket = new ServerSocket(6799);
+        ServerSocket welcomeSocket = new ServerSocket(8799);
         while(true) {
+            System.out.println(11);
             Socket server = welcomeSocket.accept();//准备接受客户端的数据
             System.out.println("远程主机地址：" + server.getRemoteSocketAddress());
             System.out.println("当前所处的服务器地址为" + server.getLocalSocketAddress());
@@ -18,13 +19,9 @@ public class Server {
             JSONObject info = JSONObject.fromObject(info_str);
             String user_id = info.getString("ID");
             String user_password = info.getString("password");
-
+            System.out.println(user_id + "\n"+user_password);
             DataOutputStream out = new DataOutputStream(server.getOutputStream());//发送给客户端的数据的容器
             out.writeUTF("谢谢连接我：" + server.getLocalSocketAddress() + "\nGoodbye!");
-
-
-
-
             DataInputStream dis = new DataInputStream(server.getInputStream());
 
             // 文件名和长度
