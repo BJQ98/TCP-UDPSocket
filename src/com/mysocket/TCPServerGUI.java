@@ -36,7 +36,7 @@ public class TCPServerGUI extends JFrame implements ActionListener{
         getContentPane().add(sp);
         sp.setViewportView(outlook);
         sp.setBounds(35,40,190,290);
-        jb1.setBounds(280, 150, 60, 20);
+        jb1.setBounds(250, 150, 100, 60);
         mylabel.setBounds(260,50,100,30);
         client_count.setBounds(270,80,60,30);
         client_count.setText("0");

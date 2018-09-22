@@ -7,7 +7,7 @@ import javax.swing.*;
 public class TCPClientGUI extends JFrame implements ActionListener{
     private TCPClient my_TCP_Client;
     private JTextField user_id;
-    private JTextField user_psw;
+    private JPasswordField user_psw;
     private JTextArea outlook;
     private JTextField my_message;
     public static void main(String[] argv){
@@ -29,7 +29,7 @@ public class TCPClientGUI extends JFrame implements ActionListener{
         JButton jb4 = new JButton("发送消息");
         jb4.addActionListener(this);
         user_id = new JTextField(20);
-        user_psw = new JTextField(20);
+        user_psw = new JPasswordField(20);
         my_message = new JTextField();
         outlook = new JTextArea();
         this.add(jb1);
@@ -43,13 +43,13 @@ public class TCPClientGUI extends JFrame implements ActionListener{
         getContentPane().add(sp);
         sp.setViewportView(outlook);
         sp.setBounds(35,80,190,250);
-        jb1.setBounds(280, 20, 60, 20);
-        jb2.setBounds(280, 50, 60, 20);
-        jb3.setBounds(280,80,60,20);
+        jb1.setBounds(260, 20, 100, 50);
+        jb2.setBounds(260, 80, 100, 50);
+        jb3.setBounds(260,270,100,50);
         user_id.setBounds(30, 20, 200, 20);
         user_psw.setBounds(30, 50, 200, 20);
-        my_message.setBounds(260,110,100,40);
-        jb4.setBounds(280,160,60,20);
+        my_message.setBounds(250,140,120,60);
+        jb4.setBounds(260,210,100,50);
         outlook.setBounds(35,80,190,250);
         outlook.setEditable(false);
         outlook.setLineWrap(true);
