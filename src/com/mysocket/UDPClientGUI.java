@@ -9,7 +9,7 @@ import javax.swing.*;
 
 public class UDPClientGUI extends JFrame implements ActionListener {
     private UDPClient my_UDP_Client;
-    private JTextArea outlook;
+    public JTextArea outlook;
     private JTextField my_message;
     public static void main(String[] argv)throws Exception{
         new UDPClientGUI();
@@ -45,20 +45,29 @@ public class UDPClientGUI extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e){ //
-       // try {
+        try {
             if (e.getActionCommand().equals("发送消息")) {
-
+                my_UDP_Client = new UDPClient();
+                String out = my_message.getText().trim();
+                String rec = my_UDP_Client.sendmessage(out);
+                outlook.append(rec + '\n');
             }
             else if(e.getActionCommand().equals("发送文件")){
-
+                my_UDP_Client = new UDPClient();
+                String filepath,filename;
+                JFileChooser fileChooser = new JFileChooser();
+                fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+                int returnVal = fileChooser.showOpenDialog(fileChooser);
+                if (returnVal == JFileChooser.APPROVE_OPTION) {
+                    filepath = fileChooser.getSelectedFile().getAbsolutePath();
+                    filename = fileChooser.getSelectedFile().getName();
+                    String resp = my_UDP_Client.sendfile(filename,filepath);
+                    outlook.append(resp + '\n');
+                }
             }
-
-//        }catch (EOFException ex1){
-//            JOptionPane.showMessageDialog(null,"登陆消息不正确",
-//                    "提示消息", JOptionPane.PLAIN_MESSAGE);
-//        }catch (Exception ex2){
-//            JOptionPane.showMessageDialog(null,"未连接",
-//                    "提示消息", JOptionPane.PLAIN_MESSAGE);
-//        }
+        }catch (Exception ex2){
+            JOptionPane.showMessageDialog(null,"服务端已关闭",
+                    "提示消息", JOptionPane.PLAIN_MESSAGE);
+        }
     }
 }

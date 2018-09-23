@@ -48,28 +48,31 @@ public class UDPServerGUI extends JFrame implements ActionListener{
         new UDPServerGUI();
         DatagramPacket packet = null;
         byte[] data = null;
-        System.out.println("***服务器端启动，等待发送数据***");
-        while(true){
-            data = new byte[1024];//创建字节数组，指定接收的数据包的大小
-            packet = new DatagramPacket(data, data.length);
-            socket.receive(packet);//此方法在接收到数据报之前会一直阻塞
-            Thread thread = new Thread(new UDPServerthread(socket, packet));
-            thread.start();
-            count++;
-            client_count.setText(String.valueOf(count));
-            InetAddress address = packet.getAddress();
-            System.out.println("当前客户端的IP为："+address.getHostAddress());
+        try {
+            while (true) {
+                data = new byte[1024];//创建字节数组，指定接收的数据包的大小
+                packet = new DatagramPacket(data, data.length);
+                socket.receive(packet);//此方法在接收到数据报之前会一直阻塞
+                InetAddress address = packet.getAddress();
+                outlook.append("本次客户端的IP为：" + address.getHostAddress() + '\n');
+                Thread thread = new Thread(new UDPServerthread(socket, packet));
+                thread.start();
+                count++;
+                client_count.setText(String.valueOf(count));
+            }
+        }catch (Exception e){
+            JOptionPane.showMessageDialog(null,"断开连接",
+                    "提示消息", JOptionPane.PLAIN_MESSAGE);
         }
-
     }
     @Override
     public void actionPerformed(ActionEvent e){ //
-        //try {
+        try {
             if(e.getActionCommand().equals("关闭服务")){
-
+                socket.close();
             }
-//        }catch (Exception ex){
-//            System.out.println(ex.getMessage());
-//        }
+        }catch (Exception ex){
+            System.out.println(ex.getMessage());
+        }
     }
 }

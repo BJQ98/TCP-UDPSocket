@@ -25,8 +25,9 @@ public class UDPClient {
         }
         return bt3;
     }
-    void sendmessage(String _message)throws Exception{
+    String sendmessage(String _message)throws Exception{
         DatagramSocket socket = new DatagramSocket();
+        socket.setSoTimeout(100);//防止未连接时阻塞
         byte[] data = _message.getBytes();
         byte[] header = "消息".getBytes();
         byte[] data_send = byteMerger(header,data);
@@ -36,18 +37,19 @@ public class UDPClient {
         DatagramPacket packet2 = new DatagramPacket(data_rec, data_rec.length);
         socket.receive(packet2);
         String info = new String(data_rec, 0, packet2.getLength());
-        System.out.println("服务器："+info);
         socket.close();
+        return info;
     }
-    void sendfile(String filename)throws Exception{
+    String sendfile(String filename, String filepath)throws Exception{
         DatagramSocket socket = new DatagramSocket();
+        socket.setSoTimeout(100);
         byte[] header = "文件".getBytes();
         int filename_length = filename.getBytes().length;
         byte[] name = filename.getBytes();
         byte bytename_length =(byte)filename_length;
         byte[] temp = ArrayUtils.add(header, bytename_length);
         byte[] data_send = byteMerger(temp, name);
-        FileInputStream fis = new FileInputStream(new File(filename));
+        FileInputStream fis = new FileInputStream(new File(filepath));
         byte []bs;//缓冲区
         ByteArrayOutputStream bos = new ByteArrayOutputStream(1024);
         byte[] b = new byte[1024];
@@ -66,11 +68,10 @@ public class UDPClient {
         DatagramPacket packet2 = new DatagramPacket(data_rec, data_rec.length);
         socket.receive(packet2);
         String info = new String(data_rec, 0, packet2.getLength());
-        System.out.println("服务器："+info);
         socket.close();
+        return info;
     }
     public static void main(String[] args) throws Exception {
         UDPClient client = new UDPClient();
-        client.sendfile("hehe.txt");
     }
 }

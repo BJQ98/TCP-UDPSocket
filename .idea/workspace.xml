@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="753e7c55-cf0d-46e5-aa48-c14741056e34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/mysocket/UDPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mysocket/UDPClientGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mysocket/UDPServerGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mysocket/UDPServerthread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/socket-test/com/mysocket/Client.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/socket-test/com/mysocket/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mysocket/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mysocket/TCPClientGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mysocket/TCPClientGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mysocket/TCPServerGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mysocket/TCPServerGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mysocket/UDPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mysocket/UDPClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mysocket/UDPClientGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mysocket/UDPClientGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mysocket/UDPServerGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mysocket/UDPServerGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mysocket/UDPServerthread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mysocket/UDPServerthread.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,13 +22,13 @@
     <session id="-537211550">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="7" />
-          <entry key="project.open.time.8" value="8" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.open.time.8" value="9" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -39,7 +36,7 @@
           <entry key="JPG" value="2" />
           <entry key="form" value="2" />
           <entry key="iml" value="2" />
-          <entry key="java" value="14" />
+          <entry key="java" value="21" />
           <entry key="md" value="3" />
           <entry key="txt" value="14" />
         </counts>
@@ -49,7 +46,7 @@
           <entry key="GUI_DESIGNER_FORM" value="2" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="14" />
+          <entry key="JAVA" value="21" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="14" />
         </counts>
@@ -57,13 +54,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="21" />
-          <entry key="java" value="8028" />
+          <entry key="java" value="8417" />
           <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8028" />
+          <entry key="JAVA" value="8417" />
           <entry key="PLAIN_TEXT" value="47" />
         </counts>
       </usages-collector>
@@ -72,19 +69,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hehe.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="151">
+              <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,10 +81,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPClientGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPServerGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-138">
-              <caret line="37" column="37" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="37" />
+            <state relative-caret-position="220">
+              <caret line="63" column="47" lean-forward="true" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mysocket/TCPClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
+            <state relative-caret-position="20">
               <caret line="8" column="23" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -117,22 +105,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mysocket/TCPClientGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPClientGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-549">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPServerthread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="39" column="36" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="36" />
+            <state relative-caret-position="331">
+              <caret line="63" column="53" lean-forward="true" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,10 +117,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPServerGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPServerthread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="155">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mysocket/TCPServerthread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,7 +143,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mysocket/TCPServerGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="1216">
               <caret line="64" column="59" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -165,8 +153,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/com/mysocket/TCPClientGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-807">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -203,12 +198,12 @@
         <option value="$PROJECT_DIR$/src/com/mysocket/TCPServerthread.java" />
         <option value="$PROJECT_DIR$/src/com/mysocket/UDPServerGUI.form" />
         <option value="$PROJECT_DIR$/hehe.txt" />
-        <option value="$PROJECT_DIR$/src/com/mysocket/UDPServerthread.java" />
-        <option value="$PROJECT_DIR$/src/com/mysocket/UDPClient.java" />
-        <option value="$PROJECT_DIR$/src/com/mysocket/UDPClientGUI.java" />
         <option value="$PROJECT_DIR$/src/com/mysocket/TCPClientGUI.java" />
         <option value="$PROJECT_DIR$/src/com/mysocket/TCPServerGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/mysocket/UDPClient.java" />
         <option value="$PROJECT_DIR$/src/com/mysocket/UDPServerGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/mysocket/UDPClientGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/mysocket/UDPServerthread.java" />
       </list>
     </option>
   </component>
@@ -229,7 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,12 +247,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537633634149" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537673445045" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -278,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UDPClient">
+  <component name="RunManager" selected="Application.UDPClientGUI">
     <configuration name="TCPClientGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mysocket.TCPClientGUI" />
       <module name="socket-test" />
@@ -353,11 +348,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UDPClient" />
-        <item itemvalue="Application.UDPServerGUI" />
-        <item itemvalue="Application.TCPServerGUI" />
-        <item itemvalue="Application.TCPClientGUI" />
         <item itemvalue="Application.UDPClientGUI" />
+        <item itemvalue="Application.UDPServerGUI" />
+        <item itemvalue="Application.TCPClientGUI" />
+        <item itemvalue="Application.TCPServerGUI" />
+        <item itemvalue="Application.UDPClient" />
       </list>
     </recent_temporary>
   </component>
@@ -392,16 +387,17 @@
       <workItem from="1537606584423" duration="3438000" />
       <workItem from="1537612619816" duration="6456000" />
       <workItem from="1537630914954" duration="2725000" />
+      <workItem from="1537670976217" duration="2546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68090000" />
+    <option name="totallyTimeSpent" value="70636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="809" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17238913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17453505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -482,6 +478,24 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPServerGUI.form" />
+    <entry file="file://$PROJECT_DIR$/hehe.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mysocket/TCPServerthread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -492,58 +506,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hehe.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPServerthread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mysocket/TCPClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
+        <state relative-caret-position="20">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPClientGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -552,8 +518,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mysocket/TCPClientGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-549">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        <state relative-caret-position="-807">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -562,8 +528,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mysocket/TCPServerGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="1216">
           <caret line="64" column="59" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPClientGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="63" column="53" lean-forward="true" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -572,8 +558,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPServerGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="220">
+          <caret line="63" column="47" lean-forward="true" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mysocket/UDPServerthread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

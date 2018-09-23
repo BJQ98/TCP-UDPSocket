@@ -21,7 +21,8 @@ public class UDPServerthread extends Thread{
             if(cmd.equals("消息")) {
                 info = new String(packet.getData(), 6, packet.getLength() - 6);
                 System.out.println(info);
-                byte[] data_toclient = "我在响应你！".getBytes();
+                UDPServerGUI.outlook.append(packet.getSocketAddress()+":"+info+'\n');
+                byte[] data_toclient = "收到消息！".getBytes();
                 send_packet = new DatagramPacket(data_toclient, data_toclient.length,
                         packet.getAddress(), packet.getPort());
                 socket.send(send_packet);
@@ -32,20 +33,18 @@ public class UDPServerthread extends Thread{
                 System.out.println(filename);
                 System.out.println(packet.getLength());
                 byte[] file_content = Arrays.copyOfRange(packet.getData(), 7+filename_length, packet.getLength());
-                File file = new File("Test1.txt");
+                File file = new File(filename);
                 FileOutputStream fos = new FileOutputStream(file);
                 fos.write(file_content);
-                System.out.println("写入成功");
+                UDPServerGUI.outlook.append("成功接收"+packet.getSocketAddress()+"的"+filename+'\n');
                 fos.close();
-                byte[] data_toclient = "成功上传文件！".getBytes();
+                byte[] data_toclient = ("成功上传文件:"+filename).getBytes();
                 send_packet = new DatagramPacket(data_toclient, data_toclient.length,
                         packet.getAddress(), packet.getPort());
                 socket.send(send_packet);
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //socket.close();
     }
 }
